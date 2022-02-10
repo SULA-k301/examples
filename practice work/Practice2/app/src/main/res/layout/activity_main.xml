@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCDDEC"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/credit" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Your payment information"
+        android:textColor="#DE000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:padding="8dp"
+        android:background="@drawable/edit_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:drawableEnd="@drawable/ic_photo_camera"
+        android:hint="Credit Card Number"
+        android:paddingRight="8dp"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:padding="8dp"
+            android:background="@drawable/edit_bg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="2"
+            android:hint="Expiration" />
+
+        <EditText
+            android:padding="8dp"
+            android:background="@drawable/edit_bg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="3"
+            android:hint="CVC code" />
+    </LinearLayout>
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="Billing address same as shipping"
+        android:textSize="16sp"
+        android:thumbTint="#EF5DA8"
+        android:track="@drawable/switch_bg"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:paddingLeft="40dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:icon="@drawable/ic_arrow_right"
+        app:iconPadding="0dp"
+        app:iconGravity="end" />
+
+
+</LinearLayout>
